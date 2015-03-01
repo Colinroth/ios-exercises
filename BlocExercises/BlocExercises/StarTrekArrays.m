@@ -11,7 +11,8 @@
 @implementation StarTrekArrays
 
 - (NSArray *) arrayOfStarTrekCharactersFromString:(NSString *)characterString {
-    /* WORK HERE */
+    //semicolon string of characters
+    //return array without semicolons
     return @[];
 }
 
