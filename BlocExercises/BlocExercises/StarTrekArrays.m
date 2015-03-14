@@ -9,26 +9,47 @@
 #import "StarTrekArrays.h"
 
 @implementation StarTrekArrays
+NSString *separator = @";";
 
 - (NSArray *) arrayOfStarTrekCharactersFromString:(NSString *)characterString {
     //semicolon string of characters
     //return array without semicolons
-    return @[];
+    
+    //
+    NSArray *resultArray;
+    
+    resultArray = [characterString  componentsSeparatedByString: separator];
+    
+    return resultArray;
 }
 
+
+
 - (NSString *) stringOfStarTrekCharactersFromArray:(NSArray *)characterArray {
-    /* WORK HERE */
-    return @"";
+    NSString *resultString;
+    resultString =[characterArray componentsJoinedByString:separator];
+    return resultString;
+    
 }
 
 - (NSArray *) alphabeticallySortedStarTrekCharactersFromArray:(NSArray *)characterArray {
     /* WORK HERE */
-    return @[];
+    NSArray *resultArray;
+    
+    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey: @"" ascending:YES
+        selector:@selector(caseInsensitiveCompare:)];
+    resultArray = [characterArray sortedArrayUsingDescriptors:@[sort]];
+    
+    return resultArray;
 }
 
 - (BOOL) characterArrayContainsWorf:(NSArray *)characterArray {
-    /* WORK HERE */
-    return NO;
+   
+    NSPredicate *findWorf = [NSPredicate predicateWithFormat:
+                  @"SELF contains 'Worf'"];
+    NSArray *resultArray = [characterArray filteredArrayUsingPredicate:findWorf];
+    
+    return resultArray;
 }
 
-@end
+    @end
