@@ -8,10 +8,11 @@ Strings
 
 func favoriteCheeseStringWithCheese(cheese: String) -> String {
     // WORK HERE
+    
     return cheese
 }
-
-let fullSentence = favoriteCheeseStringWithCheese("cheddar")
+let firstString = "My favorite cheese is "
+let fullSentence = firstString + favoriteCheeseStringWithCheese("cheddar")
 // Make fullSentence say "My favorite cheese is cheddar."
 
 /*
@@ -23,10 +24,13 @@ Arrays & Dictionaries
 let numberArray = [1, 2, 3, 4]
 // Add 5 to this array
 // WORK HERE
+let secondArray = [5]
+let fullArray = numberArray+secondArray
 
 let numberDictionary = [1 : "one", 2 : "two", 3 : "three", 4 : "four"]
 // Add 5 : "five" to this dictionary
 // WORK HERE
+let numberFive = [5:"five"]
 
 /*
 

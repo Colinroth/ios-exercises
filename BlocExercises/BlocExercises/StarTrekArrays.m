@@ -45,11 +45,15 @@ NSString *separator = @";";
 
 - (BOOL) characterArrayContainsWorf:(NSArray *)characterArray {
    
+    BOOL doesContainWorf = NO;
+    
     NSPredicate *findWorf = [NSPredicate predicateWithFormat:
                   @"SELF contains 'Worf'"];
     NSArray *resultArray = [characterArray filteredArrayUsingPredicate:findWorf];
-    
-    return resultArray;
+    if (resultArray.count >= 1 ) {
+        doesContainWorf = YES;
+    }
+    return doesContainWorf;
 }
 
     @end

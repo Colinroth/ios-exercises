@@ -31,6 +31,7 @@
 		936964C019496F8B0021C271 /* StuffRemembererTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 936964BF19496F8B0021C271 /* StuffRemembererTests.m */; };
 		93BDE6B2194A6C8600F2DE30 /* WizardOfOz.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BDE6B1194A6C8600F2DE30 /* WizardOfOz.m */; };
 		93BDE6B4194A6D3F00F2DE30 /* WizardOfOzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BDE6B3194A6D3F00F2DE30 /* WizardOfOzTests.m */; };
+		E4A320E41AD2B44D00E6A00A /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A320E31AD2B44D00E6A00A /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,8 @@
 		93BDE6B0194A6C8600F2DE30 /* WizardOfOz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardOfOz.h; sourceTree = "<group>"; };
 		93BDE6B1194A6C8600F2DE30 /* WizardOfOz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardOfOz.m; sourceTree = "<group>"; };
 		93BDE6B3194A6D3F00F2DE30 /* WizardOfOzTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardOfOzTests.m; sourceTree = "<group>"; };
+		E4A320E21AD2B44D00E6A00A /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		E4A320E31AD2B44D00E6A00A /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 		931AB0A21945060D00B4FB76 = {
 			isa = PBXGroup;
 			children = (
+				E4A320E21AD2B44D00E6A00A /* Car.h */,
+				E4A320E31AD2B44D00E6A00A /* Car.m */,
 				931AB0B61945063500B4FB76 /* BlocExercises */,
 				931AB0AF1945063500B4FB76 /* Frameworks */,
 				931AB0AE1945063500B4FB76 /* Products */,
@@ -321,6 +326,7 @@
 				936964A41947B1980021C271 /* StarTrekArrays.m in Sources */,
 				931AB0CB19464B7700B4FB76 /* SimpleCalculator.m in Sources */,
 				936964AA1947C8C40021C271 /* StarTrekDictionaries.m in Sources */,
+				E4A320E41AD2B44D00E6A00A /* Car.m in Sources */,
 				936964B81948F8130021C271 /* NumberHandler.m in Sources */,
 				936964B21947E12D0021C271 /* StarTrekDictionariesTests.m in Sources */,
 			);
